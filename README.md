@@ -1,6 +1,6 @@
 # Compinion: Analysing complexity and subjectivity
 
-## Replication data and scripts for: Ehret, Katharina and Maite Taboada (in preparation). The interplay of complexity and subjectivity in opinionated discourse. To be submitted to: XXX
+## Replication data and scripts for: Ehret, Katharina and Maite Taboada (in preparation). The interplay of complexity and subjectivity in opinionated discourse. To be submitted to: Discourse Studies.
 
 This repository contains the following resources:
 
