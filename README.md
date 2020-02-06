@@ -15,19 +15,14 @@ The data published in this repository was retrieved from the [Simon Fraser Unive
 
 ### Overview and description of folders and files
 
-This repository contains the following resources:
+This repository contains the following resources (in alphabetical order):
 
-1. Subjectivity. This folder contains the lists of argumentation and subjectivity markers used for measuring the concept subjectivity in Ehret & Taboada (in preparation). It contains two subfolders
+#### Subjectivity
+This folder contains the complete lists of subjectivity and argumentation markers described in the related publication. 
 
-* other_features: stance adverbials.csv, connectives.csv and modals.csv
+#### Scripts. 
+This folder contains the scripts for data analysis, generation, clean-up and the retrieval of the subjectivity markers.
 
-* socal_features: socal_invariant, socal_variant
 
-other_features contains lists of stance adverbials, connectives and modals which are "invariant features", i.e. they cannot take different forms.
-socal_features contains lists of positive and negative adverbs, which classify as "invariant features" as well as negative and positive adjectives, nouns and verbs, which classify as "variant features", i.e. they can take different forms such as plural, comparative or third person singular. All positive and negative features were taken from SOCAL (REF) and have a valency of |4| and |5|.
-
-2. Scripts. This folder contains the scripts for data generation, clean-up and the retrieval of the subjectivity markers.
-
-* sub_marker.py This script retrieves the raw text frequencies of the above listed argumentation and subjectivity markers.
-
-3. Statistics
+#### Statistics
+This folder contains the original data set, all statistics described in the related publication as well as extensive additional stastistics. 
