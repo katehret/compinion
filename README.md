@@ -20,7 +20,7 @@ This repository contains the following resources (in alphabetical order):
 #### Subjectivity
 This folder contains the complete lists of subjectivity and argumentation markers described in the related publication. 
 
-#### Scripts. 
+#### Scripts 
 This folder contains the scripts for data analysis, generation, clean-up and the retrieval of the subjectivity markers.
 
 
