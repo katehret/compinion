@@ -20,16 +20,16 @@ This repository contains the following resources (in alphabetical order):
 #### Data
 This folder contains the original dataset.
 
-* aggregate_totals_normalised.csv The feature matrix with the individual file names as rows and textType, year, tokens, the raw and normalised feature frequencies, and the complexity scores as columns. The normalised feature frequencies of the subjectivity and argumentation markers were calculated based on the raw feature frequencies divided by the number of tokens per file and multiplied with 1000.
+* aggregate_totals_normalised.csv: The feature matrix with the individual file names as rows and textType, year, tokens, the raw and normalised feature frequencies, and the complexity scores as columns. The normalised feature frequencies of the subjectivity and argumentation markers were calculated based on the raw feature frequencies divided by the number of tokens per file and multiplied with 1000.
 
-* markerDistributions.csv The raw frequencies of the individual subjectivity and argumentation markers per text type.
+* markerDistributions.csv: The raw frequencies of the individual subjectivity and argumentation markers per text type.
 
 #### Subjectivity
 This folder comprises the complete lists of subjectivity and argumentation markers described in the related publication. 
 
-* other_features A folder containing the lists of the argumentation markers adverbials, connectives and modals.
+* other_features: A folder containing the lists of the argumentation markers adverbials, connectives and modals.
 
-* socal_features A folder with two subdirectories sampling reduced features lists of subjectivity markers from the [*Semantic Orientation CALculator*](https://github.com/sfu-discourse-lab/SO-CAL) (SO-CAL). Specifically, only subjectivity features with a valency of 4 and 5 are included.
+* socal_features: A folder with two subdirectories sampling reduced features lists of subjectivity markers from the [*Semantic Orientation CALculator*](https://github.com/sfu-discourse-lab/SO-CAL) (SO-CAL). Specifically, only subjectivity features with a valency of 4 and 5 are included.
 
   * socal_invariant: negative and positive adverbs.
   * socal_variant: negative and positive adjectives, nouns and verbs.
@@ -38,4 +38,17 @@ This folder comprises the complete lists of subjectivity and argumentation marke
 This folder contains the scripts for data analysis, clean-up and the retrieval of the subjectivity markers.
 
 #### Statistics
-This folder contains all statistics described in the related publication and additional stastistics. 
+This folder contains all statistics described in the related publication and additional stastistics (in alphabetical order). 
+
+* The confusion matrices of the training and test datasets for forests with N = 500, 1000, 2000 trees, respectively. Confusion matrices are used to calculate model performance, i.e. prediction accuracy.
+
+ * confMat_500.csv and confMatTest_500.csv
+ * confMat_1000.csv and confMatTest_1000.csv
+ * confMat_2000.csv and confMatTest_2000.csv
+ 
+* correlations.csv: The Pearson correlation coefficients for correlations between all predictor variables described in the related publication, i.e. year, morphological complexity, syntactic complexity, overall complexity, subjective negative markers, subjective positive markers, modals, connectives, adverbials.
+
+* tunegridTree.csv: A csv file reporting the training and test accuracy for conditional inference trees grown with varying parameter settings. To be more precise, the following three parameters were used in tuning the tree: mincriterion, minbucket and maxsurrogate (for a detailed description of the parameters see https://cran.r-project.org/web/packages/partykit/vignettes/ctree.pdf). 
+ 
+ 
+
