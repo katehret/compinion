@@ -17,12 +17,14 @@ The data published in this repository was retrieved from the [Simon Fraser Unive
 
 This repository contains the following resources (in alphabetical order):
 
+#### Data
+This folder contains the original data.
+
 #### Subjectivity
-This folder contains the complete lists of subjectivity and argumentation markers described in the related publication. 
+This folder comprises the complete lists of subjectivity and argumentation markers described in the related publication. 
 
 #### Scripts 
-This folder contains the scripts for data analysis, generation, clean-up and the retrieval of the subjectivity markers.
-
+This folder contains the scripts for data analysis, clean-up and the retrieval of the subjectivity markers.
 
 #### Statistics
-This folder contains the original data set, all statistics described in the related publication as well as extensive additional stastistics. 
+This folder contains the original data set, all statistics described in the related publication and extensive additional stastistics. 
