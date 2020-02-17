@@ -35,7 +35,7 @@ This folder comprises the complete lists of subjectivity and argumentation marke
   * socal_variant: negative and positive adjectives, nouns and verbs.
   
 #### Scripts 
-This folder contains the scripts for data analysis, clean-up and the retrieval of the subjectivity markers.
+This folder contains the scripts for data analysis and the retrieval of the subjectivity markers.
 
 * compinion.r: R commands for the visualisation and implementation of the statistics, conditional inference trees and forests presented in the related publication. Only tested on Linux GNU Debian, using R version 3.6.2.
 
