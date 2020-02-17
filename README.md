@@ -29,7 +29,7 @@ This folder comprises the complete lists of subjectivity and argumentation marke
 
 * other_features A folder containing the lists of the argumentation markers adverbials, connectives and modals.
 
-* socal_features A folder with two subdirectories sampling reduced features lists of subjectivity markers from the [*Semantic Orientation CALculator* (SO-CAL)][https://github.com/sfu-discourse-lab/SO-CAL]. Specifically, only subjectivity features with a valency of 4 and 5 are included.
+* socal_features A folder with two subdirectories sampling reduced features lists of subjectivity markers from the [*Semantic Orientation CALculator*](https://github.com/sfu-discourse-lab/SO-CAL) (SO-CAL). Specifically, only subjectivity features with a valency of 4 and 5 are included.
 
   * socal_invariant: negative and positive adverbs.
   * socal_variant: negative and positive adjectives, nouns and verbs.
