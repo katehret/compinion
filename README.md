@@ -20,9 +20,20 @@ This repository contains the following resources (in alphabetical order):
 #### Data
 This folder contains the original data.
 
+* aggregate_totals_normalised.csv The feature matrix with the individual file names as rows and textType, year, tokens, the raw and normalised feature frequencies, and the complexity scores as columns. The normalised feature frequencies of the subjectivity and argumentation markers were calculated based on the raw feature frequencies divided by the number of tokens per file and multiplied with 1000.
+
+* markerDistributions.csv The raw frequencies of the individual subjectivity and argumentation markers per text type.
+
 #### Subjectivity
 This folder comprises the complete lists of subjectivity and argumentation markers described in the related publication. 
 
+* other_features A folder containing the lists of the argumentation markers adverbials, connectives and modals.
+
+* socal_features A folder with two subdirectories sampling reduced features lists of subjectivity markers from the [*Semantic Orientation CALculator* (SO-CAL)][https://github.com/sfu-discourse-lab/SO-CAL]. Specifically, only subjectivity features with a valency of 4 and 5 are included.
+
+  * socal_invariant: negative and positive adverbs.
+  * socal_variant: negative and positive adjectives, nouns and verbs.
+  
 #### Scripts 
 This folder contains the scripts for data analysis, clean-up and the retrieval of the subjectivity markers.
 
