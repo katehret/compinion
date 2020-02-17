@@ -38,4 +38,4 @@ This folder comprises the complete lists of subjectivity and argumentation marke
 This folder contains the scripts for data analysis, clean-up and the retrieval of the subjectivity markers.
 
 #### Statistics
-This folder contains the original data set, all statistics described in the related publication and extensive additional stastistics. 
+This folder contains all statistics described in the related publication and additional stastistics. 
