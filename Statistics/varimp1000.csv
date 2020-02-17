@@ -1,0 +1,10 @@
+predictor,importance
+year,0.001071133194711
+morphComplexity,0.032051654866527
+synComplexity,0.012618036422247
+overallComplexity,0.836917193691931
+subjectiveNegative,0.008602202181553
+subjectivePositive,0.002332371801514
+modals,0.007057700005259
+connectives,0.014042929899381
+adverbials,0.034647480713093
