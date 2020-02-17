@@ -49,6 +49,14 @@ This folder contains all statistics described in the related publication and add
 * correlations.csv: The Pearson correlation coefficients for correlations between all predictor variables described in the related publication, i.e. year, morphological complexity, syntactic complexity, overall complexity, subjective negative markers, subjective positive markers, modals, connectives, adverbials.
 
 * tunegridTree.csv: A csv file reporting the training and test accuracy for conditional inference trees grown with varying parameter settings. To be more precise, the following three parameters were used in tuning the tree: mincriterion, minbucket and maxsurrogate (for a detailed description of the parameters see https://cran.r-project.org/web/packages/partykit/vignettes/ctree.pdf). 
+
+* The rankings of the nine predictor variables according to the conditional permutation-importance measure, a measure indicating the importance of individual predictor variables, which was calculated for three different forests, i.e. forests with N = 500, 1000, 2000 trees, respectively. 
+
+  * varimp500.csv
+  * varimp1000.csv
+  * varimp2000.csv
+
+
  
  
 
