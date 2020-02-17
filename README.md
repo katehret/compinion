@@ -10,7 +10,7 @@ This repository comprises the original data, scripts and extensive statistics fo
 
 This publication is a large-scale, quantitative analysis of text complexity and various markers of subjectivity in opinionated discourse. Specifically, the authors investigate how text complexity interacts with markers of subjectivity to characterise (i) opinion articles, (ii) reader comments, and (iii) news articles. Methodologically, conditional inference trees and random forests (as implemented in the R package [partykit](https://cran.r-project.org/web/packages/partykit/vignettes/partykit.pdf)) are used to unravel the interactions between text complexity and subjectivity. Text complexity is defined in terms of Kolmogorov complexity, i.e., the complexity of a text is measured as the length of the shortest possible description necessary to regenerate the original text. Subjectivity is operationalised as the frequency of lexico-grammatical markers of subjectivity and argumentation which have been well-established in research on sentiment, evaluation, stance and Appraisal. 
 
-The data published in this repository was retrieved from the [*Simon Fraser University opinion and comments corpus*] (https://github.com/sfu-discourse-lab/SOCC) (SOCC) and a custom-made corpus of general news articles from the Canadian online newspaper [The Globe and Mail](https://www.theglobeandmail.com/). 
+The data published in this repository was retrieved from the [*Simon Fraser University opinion and comments corpus*](https://github.com/sfu-discourse-lab/SOCC) (SOCC) and a custom-made corpus of general news articles from the Canadian online newspaper [The Globe and Mail](https://www.theglobeandmail.com/). 
 
 
 ### Overview and description of folders and files
