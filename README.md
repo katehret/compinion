@@ -38,9 +38,9 @@ This folder comprises the complete lists of subjectivity and argumentation marke
 This folder contains the scripts for data analysis, clean-up and the retrieval of the subjectivity markers.
 
 #### Statistics
-This folder contains all statistics described in the related publication and additional stastistics (in alphabetical order). 
+This folder contains all statistics described in the related publication and additional stastistics. 
 
-* The confusion matrices of the training and test datasets for forests with N = 500, 1000, 2000 trees, respectively. Confusion matrices are used to calculate model performance, i.e. prediction accuracy.
+* The confusion matrices of the training and test datasets for conditional inference forests with N = 500, 1000, 2000 trees, respectively. Confusion matrices are used to calculate model performance, i.e. prediction accuracy.
 
   * confMat_500.csv and confMatTest_500.csv
   * confMat_1000.csv and confMatTest_1000.csv
@@ -50,7 +50,7 @@ This folder contains all statistics described in the related publication and add
 
 * tunegridTree.csv: A csv file reporting the training and test accuracy for conditional inference trees grown with varying parameter settings. To be more precise, the following three parameters were used in tuning the tree: mincriterion, minbucket and maxsurrogate (for a detailed description of the parameters see https://cran.r-project.org/web/packages/partykit/vignettes/ctree.pdf). 
 
-* The rankings of the nine predictor variables according to the conditional permutation-importance measure, a measure indicating the importance of individual predictor variables, which was calculated for three different forests, i.e. forests with N = 500, 1000, 2000 trees, respectively. 
+* The rankings of the nine predictor variables according to the conditional permutation-importance measure, a measure indicating the importance of individual predictor variables, which was calculated for three differently sized condtional inference forests, i.e. forests with N = 500, 1000, 2000 trees, respectively. 
 
   * varimp500.csv
   * varimp1000.csv
