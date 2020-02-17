@@ -18,7 +18,7 @@ The data published in this repository was retrieved from the [Simon Fraser Unive
 This repository contains the following resources (in alphabetical order):
 
 #### Data
-This folder contains the original data.
+This folder contains the original dataset.
 
 * aggregate_totals_normalised.csv The feature matrix with the individual file names as rows and textType, year, tokens, the raw and normalised feature frequencies, and the complexity scores as columns. The normalised feature frequencies of the subjectivity and argumentation markers were calculated based on the raw feature frequencies divided by the number of tokens per file and multiplied with 1000.
 
