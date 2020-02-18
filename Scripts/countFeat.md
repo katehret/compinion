@@ -5,7 +5,7 @@ This script retrieves all markers of subjectivity and argumentation described in
 
 Note that all paths are hard-coded:
 
-* the paths to the feature lists are hard-coded according to the hierarchy of the folder **Subjectivity** where all lists are stored. Do not change the hierarchy of this folder. 
+* the paths to the feature lists are hard-coded according to the hierarchy of the folder [Subjectivity](compinion/Subjectivity) where all lists are stored. Do not change the hierarchy of this folder. 
 
 * the script should be placed
 
