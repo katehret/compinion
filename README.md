@@ -39,9 +39,9 @@ This folder contains the scripts for data analysis and the retrieval of the subj
 
 * compinion.r: R commands for the visualisation and implementation of the statistics, conditional inference trees and forests presented in the related publication. Only tested on Linux GNU Debian, using R version 3.6.2.
 
-* countFeat.py: A python script for retrieving the subjectivity and argumentation markers (see **Subjectivity**). NOT ONLINE YET
+* countFeat.py: A python script for retrieving the subjectivity and argumentation markers (see **Subjectivity**).
 
-* countFeat.md: Read me with instructions of how to run count.Feat.py. NOT ONLINE YET
+* countFeat.md: Read me with instructions of how to run countFeat.py.
 
 #### Statistics
 This folder contains all statistics described in the related publication and additional stastistics. 
