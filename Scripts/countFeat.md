@@ -7,7 +7,7 @@ Note that all paths are hard-coded:
 
 * the paths to the feature lists are hard-coded according to the hierarchy of the folder [Subjectivity](compinion/Subjectivity) where all lists are stored. Do not change the hierarchy of this folder. 
 
-* the script should be placed
+* the script itself should be placed in the same directory as the Subjectivity folder.
 
 
 To run the script from the command line use python3.x as follows:
