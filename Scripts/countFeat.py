@@ -120,7 +120,7 @@ def totalCount(dataPath, outPath):
 # Output: file containing 
 def aggregateTotals(dataPath):
     import string
-    with open("./subjectivity/results/total_counts/aggregate_totals.csv", "a") as out:
+    with open("./Subjectivity/results/total_counts/aggregate_totals.csv", "a") as out:
         out.write("filename,textType,year,tokens" + "\n")
     for file in os.listdir(dataPath):
         with open(dataPath + '/' + file) as f:
@@ -129,54 +129,54 @@ def aggregateTotals(dataPath):
         total = file + "," + file[:min([ind for ind in [file.find(str(num)) for num in range(0,10)] if ind > 0])]
         total += "," + file[min([ind for ind in [file.find(str(num)) for num in range(1,10)] if ind > 0]):min([ind for ind in [file.find(str(num)) for num in range(1,10)] if ind > 0])+4]
         total += "," + str(len(data)) + "\n"
-        with open("./subjectivity/results/total_counts/aggregate_totals.csv", "a") as out:
+        with open("./Subjectivity/results/total_counts/aggregate_totals.csv", "a") as out:
             out.write(total)
 
     # add columns for adverbials, connectives and modals
-    for file in os.listdir("./subjectivity/results/total_counts/other"):
-        df = pd.read_csv("./subjectivity/results/total_counts/other/" + file)
-        dg = pd.read_csv("./subjectivity/results/total_counts/aggregate_totals.csv")
+    for file in os.listdir("./Subjectivity/results/total_counts/other"):
+        df = pd.read_csv("./Subjectivity/results/total_counts/other/" + file)
+        dg = pd.read_csv("./Subjectivity/results/total_counts/aggregate_totals.csv")
         dg[file.split("_")[0] + "_raw"] = df.iloc[ : , 1]
-        dg.to_csv("./subjectivity/results/total_counts/aggregate_totals.csv", index=False)
+        dg.to_csv("./Subjectivity/results/total_counts/aggregate_totals.csv", index=False)
     
     # sum adverbials, connectives and modals
-    df = pd.read_csv("./subjectivity/results/total_counts/aggregate_totals.csv")
+    df = pd.read_csv("./Subjectivity/results/total_counts/aggregate_totals.csv")
     df["argumentativeMarkers_raw"] = df.iloc[ : , 4:7].sum(axis=1)
-    df.to_csv("./subjectivity/results/total_counts/aggregate_totals.csv", index=False)
+    df.to_csv("./Subjectivity/results/total_counts/aggregate_totals.csv", index=False)
 
     # sum negative subjective markers
     temp = pd.DataFrame()
-    for file in os.listdir("./subjectivity/results/total_counts/socal"):
+    for file in os.listdir("./Subjectivity/results/total_counts/socal"):
         if file.split("_")[1] == "negative":
-            df = pd.read_csv("./subjectivity/results/total_counts/socal/" + file)
+            df = pd.read_csv("./Subjectivity/results/total_counts/socal/" + file)
             temp[file] = df.iloc[ : , 1]
-    dg = pd.read_csv("./subjectivity/results/total_counts/aggregate_totals.csv")
+    dg = pd.read_csv("./Subjectivity/results/total_counts/aggregate_totals.csv")
     dg["subjectiveNegative_raw"] = temp.iloc[ : , 0:4].sum(axis=1)
-    dg.to_csv("./subjectivity/results/total_counts/aggregate_totals.csv", index=False)
+    dg.to_csv("./Subjectivity/results/total_counts/aggregate_totals.csv", index=False)
 
     # sum positive subjective markers
     temp = pd.DataFrame()
-    for file in os.listdir("./subjectivity/results/total_counts/socal"):
+    for file in os.listdir("./Subjectivity/results/total_counts/socal"):
         if file.split("_")[1] == "positive":
-            df = pd.read_csv("./subjectivity/results/total_counts/socal/" + file)
+            df = pd.read_csv("./Subjectivity/results/total_counts/socal/" + file)
             temp[file] = df.iloc[ : , 1]
-    dg = pd.read_csv("./subjectivity/results/total_counts/aggregate_totals.csv")
+    dg = pd.read_csv("./Subjectivity/results/total_counts/aggregate_totals.csv")
     dg["subjectivePositive_raw"] = temp.iloc[ : , 0:4].sum(axis=1)
-    dg.to_csv("./subjectivity/results/total_counts/aggregate_totals.csv", index=False)
+    dg.to_csv("./Subjectivity/results/total_counts/aggregate_totals.csv", index=False)
 
     # sum subjective markers
-    df = pd.read_csv("./subjectivity/results/total_counts/aggregate_totals.csv")
+    df = pd.read_csv("./Subjectivity/results/total_counts/aggregate_totals.csv")
     df["subjectiveMarkers_raw"] = df.iloc[ : , 8:10].sum(axis=1)
-    df.to_csv("./subjectivity/results/total_counts/aggregate_totals.csv", index=False)
+    df.to_csv("./Subjectivity/results/total_counts/aggregate_totals.csv", index=False)
 
 
 def main(corpusFolderDir):
-    countInvariants("./subjectivity/other_features", corpusFolderDir, "./subjectivity/results/other_counts")
-    countInvariants("./subjectivity/socal_features/socal_invariant", corpusFolderDir, "./subjectivity/results/socal_counts/invariant")
-    countVariants("./subjectivity/socal_features/socal_variant", corpusFolderDir, "./subjectivity/results/socal_counts/variant")
-    totalCount("./subjectivity/results/other_counts", "./subjectivity/results/total_counts/other")
-    totalCount("./subjectivity/results/socal_counts/invariant", "./subjectivity/results/total_counts/socal")
-    totalCount("./subjectivity/results/socal_counts/variant", "./subjectivity/results/total_counts/socal")
+    countInvariants("./Subjectivity/other_features", corpusFolderDir, "./Subjectivity/results/other_counts")
+    countInvariants("./Subjectivity/socal_features/socal_invariant", corpusFolderDir, "./Subjectivity/results/socal_counts/invariant")
+    countVariants("./Subjectivity/socal_features/socal_variant", corpusFolderDir, "./Subjectivity/results/socal_counts/variant")
+    totalCount("./Subjectivity/results/other_counts", "./Subjectivity/results/total_counts/other")
+    totalCount("./Subjectivity/results/socal_counts/invariant", "./Subjectivity/results/total_counts/socal")
+    totalCount("./Subjectivity/results/socal_counts/variant", "./Subjectivity/results/total_counts/socal")
     aggregateTotals(corpusFolderDir)
     return 0
 
