@@ -1,7 +1,7 @@
 # Read Me and instructions for countFeat.py
 
 
-This script retrieves all markers of subjectivity and argumentation described in the related publication. The complete lists of markers are available from this repository (see [Subjectivity](compinion/Subjectivity). 
+This script retrieves all markers of subjectivity and argumentation described in the related publication. The complete lists of markers are available from this repository (see [Subjectivity])(compinion/Subjectivity). 
 
 Note that all paths are hard-coded:
 
