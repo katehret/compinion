@@ -2,6 +2,12 @@
 
 #### Replication data and scripts for: The interplay of complexity and subjectivity in opinionated discourse. (version 1.0)
 
+
+
+[![DOI](https://zenodo.org/badge/189996444.svg)](https://zenodo.org/badge/latestdoi/189996444)
+
+
+
 ### Description
 
 This repository comprises the original data, scripts and extensive statistics for the analysis of text complexity and subjectivity described in the related publication
