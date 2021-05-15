@@ -14,7 +14,7 @@ https://zenodo.org/badge/latestdoi/189996444
 
 This repository comprises the original data, scripts and extensive statistics for the analysis of text complexity and subjectivity described in the related publication
 
-* Ehret, Katharina, and Maite Taboada (2020). "The interplay of complexity and subjectivity in opinionated discourse." *Discourse Studies*: 1-25. (Sage Online First)
+* Ehret, Katharina, and Maite Taboada (2021). "The interplay of complexity and subjectivity in opinionated discourse." *Discourse Studies* 23 (2): 141-165. DOI: https://doi.org/10.1177/1461445620966923
 
 This publication is a large-scale, quantitative analysis of text complexity and various markers of subjectivity in opinionated discourse. Specifically, the authors investigate how text complexity interacts with markers of subjectivity to characterise (i) opinion articles, (ii) reader comments, and (iii) news articles. Methodologically, conditional inference trees and random forests (as implemented in the R package [partykit](https://cran.r-project.org/web/packages/partykit/vignettes/partykit.pdf)) are used to unravel the interactions between text complexity and subjectivity. Text complexity is defined in terms of Kolmogorov complexity, i.e., the complexity of a text is measured as the length of the shortest possible description necessary to regenerate the original text. Subjectivity is operationalised as the frequency of lexico-grammatical markers of subjectivity and argumentation which have been well-established in research on sentiment, evaluation, stance and Appraisal. 
 
